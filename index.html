@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python BeautifulSoup 練習頁面</title>
+    <meta name="description" content="這是一個專門給 Python BeautifulSoup 練習的靜態網頁">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>歡迎來到 BeautifulSoup 練習場</h1>
+        <p>這個頁面包含了各種常見的 HTML 標籤，方便你練習 Python 爬蟲與解析！</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>這是第一個段落區塊</h2>
+            <p>這裡是第一段文字內容，裡面有 <strong>粗體</strong> 和 <em>斜體</em>。</p>
+            <p>這是第二段文字，純粹用來測試找「第一個 p 標籤」不會抓到這一段。</p>
+        </section>
+
+        <section>
+            <h3>圖片範例</h3>
+            <img src="https://http.cat/200" alt="HTTP 200 OK 貓咪圖片">
+            <p>上面的圖片是來自 http.cat 的 200 狀態碼貓咪～</p>
+            
+            <!-- 第二張圖片，只是為了確保第一張真的會被抓到 -->
+            <img src="https://http.cat/404" alt="404 Not Found">
+        </section>
+
+        <section>
+            <h3>超連結練習</h3>
+            <p>點擊這裡前往 <a href="https://www.python.org/">Python 官方網站</a>，學習更多 Python 知識！</p>
+            
+            <p>另一個連結：<a href="https://github.com/">GitHub</a></p>
+        </section>
+
+        <section>
+            <ul>
+                <li>BeautifulSoup</li>
+                <li>requests</li>
+                <li>lxml</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 BeautifulSoup 練習頁面 | 僅供學習使用</p>
+    </footer>
+</body>
+</html>
